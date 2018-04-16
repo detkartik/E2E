@@ -1,0 +1,6 @@
+22:18:32.250 [main] INFO  e2e.CategoryNavigation - driver is initialized
+22:18:48.570 [main] INFO  e2e.ValidateTitle - driver is initialized
+22:19:06.737 [main] INFO  e2e.ValidateTitle - validation is successfull
+22:19:09.615 [main] INFO  e2e.ValidateNavBar - driver is initialized
+22:19:32.292 [main] INFO  e2e.ValidateNavBar - validation is successfull
+22:44:18.688 [main] INFO  e2e.CategoryNavigation - driver is initialized

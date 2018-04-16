@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 8, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 148.903 s <<< FAILURE! - in TestSuite
+basePageNavigation(testcases.ValidateTitle)  Time elapsed: 12.467 s  <<< FAILURE!
+java.lang.AssertionError: expected [Christopher & Banks] but found []
+	at testcases.ValidateTitle.basePageNavigation(ValidateTitle.java:37)
+
+basePageNavigation(testcases.SubcategoryNav)  Time elapsed: 12.125 s  <<< FAILURE!
+java.lang.NullPointerException
+	at testcases.SubcategoryNav.basePageNavigation(SubcategoryNav.java:38)
+
+basePageNavigation(e2e.HomeContentTest)  Time elapsed: 12.507 s  <<< FAILURE!
+org.sikuli.script.FindFailed: Region: doFind: Image not loadable: 
+	at e2e.HomeContentTest.basePageNavigation(HomeContentTest.java:40)
+

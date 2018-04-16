@@ -1,0 +1,6 @@
+pageObjects\Landingpage.class
+resource\ExcelDriven.class
+pageObjects\HoverElements.class
+pageObjects\LoginPage.class
+pageObjects\Patterns.class
+resource\Base.class

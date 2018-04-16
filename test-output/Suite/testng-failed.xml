@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="e2e.Listner"/>
+    <listener class-name="e2e.ExtentReporterNG"/>
+  </listeners>
+  <test thread-count="5" name="Validate Title(failed)">
+    <classes>
+      <class name="testcases.ValidateTitle">
+        <methods>
+          <include name="intialize"/>
+          <include name="teardown"/>
+          <include name="basePageNavigation"/>
+        </methods>
+      </class> <!-- testcases.ValidateTitle -->
+    </classes>
+  </test> <!-- Validate Title(failed) -->
+  <test thread-count="5" name="sub category nav(failed)">
+    <classes>
+      <class name="testcases.SubcategoryNav">
+        <methods>
+          <include name="intialize"/>
+          <include name="basePageNavigation"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- testcases.SubcategoryNav -->
+    </classes>
+  </test> <!-- sub category nav(failed) -->
+  <test thread-count="5" name="Contet Test(failed)">
+    <classes>
+      <class name="e2e.HomeContentTest">
+        <methods>
+          <include name="teardown"/>
+          <include name="basePageNavigation"/>
+          <include name="intialize"/>
+        </methods>
+      </class> <!-- e2e.HomeContentTest -->
+    </classes>
+  </test> <!-- Contet Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

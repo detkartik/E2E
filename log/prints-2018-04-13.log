@@ -1,0 +1,3 @@
+16:02:32.075 [main] INFO  testcases.ValidateNavBar - validation is successfull
+16:02:36.080 [main] INFO  e2e.HomeContentTest - driver is initialized
+16:03:02.392 [main] INFO  e2e.HomeContentTest - Navigated to Homepage

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+<listeners>
+<listener class-name="e2e.Listner"/>
+<listener class-name="e2e.ExtentReporterNG"/>
+</listeners>  
+
+<test name="Homepage">
+   <classes>
+      <class name="e2e.Homepage"/>
+    </classes>
+  </test>
+   
+   <test name="Category Navigation">
+      <classes>
+      <class name="testcases.CategoryNavigation"/>
+      </classes>
+   </test>
+   
+   <test name="Validate Title"> 
+   <classes>  
+      <class name="testcases.ValidateTitle"/>
+      </classes>
+    </test>
+     <test name="sub category nav">
+     <classes>
+     <class name="testcases.SubcategoryNav"/>
+      </classes>
+      </test>
+   <test name = "Contet Test">
+   <classes>
+      <class name="e2e.HomeContentTest"/>
+ </classes>
+ </test>
+ <test name="Validation Nav Bar">
+     <classes> 
+      <class name="testcases.ValidateNavBar"/>
+      
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

@@ -1,0 +1,4 @@
+07:58:52.979 [main] INFO  e2e.ValidateTitle - driver is initialized
+07:59:06.911 [main] INFO  e2e.ValidateTitle - validation is successfull
+07:59:09.705 [main] INFO  e2e.ValidateNavBar - driver is initialized
+07:59:28.658 [main] INFO  e2e.ValidateNavBar - validation is successfull
