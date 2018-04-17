@@ -1,4 +1,4 @@
-package e2e;
+package testcases;
 
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
@@ -15,13 +15,12 @@ import pageObjects.LoginPage;
 import resource.Base;
 import resource.ExcelDriven;
 
-//import resource.ExcelDriven;
 
 
 
-public class Homepage extends Base {
+public class ValidateLogin extends Base {
 
-public static Logger log =LogManager.getLogger(Homepage.class.getName());
+public static Logger log =LogManager.getLogger(ValidateLogin.class.getName());
 
 	
 @BeforeTest
@@ -34,7 +33,7 @@ public void intialize() throws IOException
  driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
  driver.manage().deleteAllCookies();
  driver.manage().window().maximize();
- driver.get(prop.getProperty("url"));
+ 
 	log.info("Navigated to Homepage");
 
 }
@@ -42,10 +41,11 @@ public void intialize() throws IOException
 	
 @Test(dataProvider="getData")	
 	
-public void basePageNavigation(String Username,String Password, String Text) throws IOException
+public void basePageNavigation(String Username,String Password) throws IOException
  {
 	
 	
+	driver.get(prop.getProperty("url"));
 	
 	Landingpage LP = new Landingpage(driver);
 	LoginPage login = new LoginPage(driver);
@@ -55,7 +55,7 @@ public void basePageNavigation(String Username,String Password, String Text) thr
      login.getUsername().sendKeys(Username);
 	login.getPassword().sendKeys(Password);
 	login.Login().click();
-	log.trace(Text);	
+	//log.trace(Text);	
  }
 
 @AfterTest
@@ -64,15 +64,15 @@ public void teardown()
   driver.close();	
 }
 
-/*@DataProvider
+@DataProvider
 public Object[][] getData()
 {
-Object[][] data	= ExcelDriven.TestData("Login");
+Object[][] data	= ExcelDriven.TestData("Userdata");
 return data;
-}*/
+}
 
 
-@DataProvider
+/*@DataProvider
 public Object[][] getData(String username, String password, String Text) throws IOException
 {
  
@@ -91,6 +91,6 @@ public Object[][] getData(String username, String password, String Text) throws 
   data[2][2]="successfully logged in";
 		  return data;
  
- }
+ }*/
 
 }
