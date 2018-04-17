@@ -37,7 +37,7 @@ public void basePageNavigation() throws IOException, FindFailed
 	log.info("Navigated to Homepage");
 	
 	Patterns p = new Patterns();
-	p.home.click("", 5000);
+	p.home.click(p, 5000);
    
 	   
     

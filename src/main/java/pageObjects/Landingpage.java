@@ -16,7 +16,7 @@ public class Landingpage {
     By MenuNav = By.xpath("(//a[@class='has-sub-menu'])[1]");	
 	By Subcat = By.xpath("//a[@href='https://dev.christopherandbanks.com/missy-4-16/dresses-and-skirts/']");
 	By MenuBar = By.xpath("//div[@class='level-2 megamenudrop']");
-       
+    By headerbanner = By.xpath("//div[@class='header-banner desktoponly homepromo-banner']");   
     public Landingpage(WebDriver driver2) {
 	
 		// TODO Auto-generated constructor stub
@@ -60,5 +60,11 @@ public class Landingpage {
 	  return driver.findElement(Subcat);   
    	   
    }
-   
+  
+     public WebElement HeaderBanner()
+     {
+    	 return driver.findElement(headerbanner);
+    	 
+     }
+
 }

@@ -37,7 +37,13 @@
  <test name="Validation Nav Bar">
      <classes> 
       <class name="testcases.ValidateNavBar"/>
-      
-    </classes>
-  </test> <!-- Test -->
+      </classes>
+  </test>
+  <test name = "UI Testcases">
+  <classes>
+  <class name="testcases.UITest"/>
+  
+  </classes>
+  </test>
+   <!-- Test -->
 </suite> <!-- Suite -->

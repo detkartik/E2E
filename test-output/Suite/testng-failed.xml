@@ -5,6 +5,17 @@
     <listener class-name="e2e.Listner"/>
     <listener class-name="e2e.ExtentReporterNG"/>
   </listeners>
+  <test thread-count="5" name="Homepage(failed)">
+    <classes>
+      <class name="e2e.Homepage">
+        <methods>
+          <include name="intialize"/>
+          <include name="teardown"/>
+          <include name="basePageNavigation"/>
+        </methods>
+      </class> <!-- e2e.Homepage -->
+    </classes>
+  </test> <!-- Homepage(failed) -->
   <test thread-count="5" name="Validate Title(failed)">
     <classes>
       <class name="testcases.ValidateTitle">

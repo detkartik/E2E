@@ -1,8 +1,1 @@
-12:59:13.844 [main] INFO  e2e.Homepage - driver is initialized
-12:59:13.844 [main] INFO  e2e.Homepage - driver is initialized
-12:59:34.082 [main] INFO  e2e.Homepage - Navigated to Homepage
-12:59:34.082 [main] INFO  e2e.Homepage - Navigated to Homepage
-13:00:13.337 [main] INFO  e2e.Homepage - driver is initialized
-13:00:13.337 [main] INFO  e2e.Homepage - driver is initialized
-13:00:33.083 [main] INFO  e2e.Homepage - Navigated to Homepage
-13:00:33.083 [main] INFO  e2e.Homepage - Navigated to Homepage
+15:42:57.204 [main] INFO  testcases.UITest - driver is initialized

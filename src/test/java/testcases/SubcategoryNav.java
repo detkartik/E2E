@@ -39,8 +39,8 @@ public void basePageNavigation() throws IOException
      boolean menu = l.MenuBar().isEnabled();
      hover.HoverMenu().build().perform();
      
-     Assert.assertTrue(menu);
-     //hover.HoverMenu().moveToElement(l.SubCatNav()).click().build().perform();
+    Assert.assertTrue(menu);
+     hover.HoverMenu().moveToElement(l.SubCatNav()).click().build().perform();
   }
 
 @AfterTest
