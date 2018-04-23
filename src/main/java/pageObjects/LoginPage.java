@@ -19,8 +19,8 @@ public class LoginPage {
 		// TODO Auto-generated constructor stub
 	this.driver =driver2;
 	
+	
 	}
-
 	public  WebElement getUsername()
 	{
 		 WebDriverWait wait = new WebDriverWait(driver,30);

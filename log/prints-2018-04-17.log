@@ -1,8 +1,3 @@
-14:40:36.779 [main] INFO  testcases.CategoryNavigation - driver is initialized
-14:49:58.185 [main] INFO  testcases.UITest - driver is initialized
-15:01:21.506 [main] INFO  testcases.UITest - driver is initialized
-15:03:39.334 [main] INFO  testcases.UITest - driver is initialized
-15:10:07.741 [main] INFO  testcases.UITest - driver is initialized
-15:15:16.118 [main] INFO  testcases.UITest - driver is initialized
-15:17:33.808 [main] INFO  testcases.UITest - driver is initialized
-15:34:51.947 [main] INFO  testcases.UITest - driver is initialized
+23:51:48.499 [main] INFO  testcases.CategoryNavigation - driver is initialized
+23:55:49.594 [main] INFO  testcases.CategoryNavigation - driver is initialized
+23:58:39.059 [main] INFO  testcases.CategoryNavigation - driver is initialized

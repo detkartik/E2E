@@ -5,37 +5,15 @@
     <listener class-name="e2e.Listner"/>
     <listener class-name="e2e.ExtentReporterNG"/>
   </listeners>
-  <test thread-count="5" verbose="0" name="Validate Title(failed)">
+  <test thread-count="5" verbose="0" name=" PDP navigation(failed)">
     <classes>
-      <class name="testcases.ValidateTitle">
+      <class name="testcases.PDPNavigation">
         <methods>
+          <include name="ProductpageNavigation"/>
           <include name="intialize"/>
           <include name="teardown"/>
-          <include name="basePageNavigation"/>
         </methods>
-      </class> <!-- testcases.ValidateTitle -->
+      </class> <!-- testcases.PDPNavigation -->
     </classes>
-  </test> <!-- Validate Title(failed) -->
-  <test thread-count="5" verbose="0" name="sub category nav(failed)">
-    <classes>
-      <class name="testcases.SubcategoryNav">
-        <methods>
-          <include name="intialize"/>
-          <include name="basePageNavigation"/>
-          <include name="teardown"/>
-        </methods>
-      </class> <!-- testcases.SubcategoryNav -->
-    </classes>
-  </test> <!-- sub category nav(failed) -->
-  <test thread-count="5" verbose="0" name="Contet Test(failed)">
-    <classes>
-      <class name="e2e.HomeContentTest">
-        <methods>
-          <include name="teardown"/>
-          <include name="basePageNavigation"/>
-          <include name="intialize"/>
-        </methods>
-      </class> <!-- e2e.HomeContentTest -->
-    </classes>
-  </test> <!-- Contet Test(failed) -->
+  </test> <!--  PDP navigation(failed) -->
 </suite> <!-- Failed suite [Suite] -->

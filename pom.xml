@@ -19,6 +19,7 @@
     </resources>
     
  <pluginManagement>
+    
       <plugins>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
@@ -30,7 +31,56 @@
           </suiteXmlFiles>
         </configuration>
         </plugin>       
-     <plugin>
+    
+<plugin>
+<artifactId>maven-compiler-plugin</artifactId>
+<version>2.3</version>
+<configuration>
+<source>1.5</source>
+<target>1.5</target>
+</configuration>
+</plugin>
+<plugin>
+<groupId>org.apache.maven.plugins</groupId>
+<artifactId>maven-jar-plugin</artifactId>
+<version>2.4</version>
+<configuration>
+<archive>
+<manifest>
+<mainClass>com.googlecode.javacpp.Builder</mainClass>
+</manifest>
+<manifestEntries>
+<Name>com/googlecode/javacpp/</Name>
+<Implementation-Title>${project.name}</Implementation-Title>
+<Implementation-Vendor>Samuel Audet</Implementation-Vendor>
+<Implementation-Version>${project.version}</Implementation-Version>
+<Specification-Title>${project.name}</Specification-Title>
+<Specification-Vendor>Samuel Audet</Specification-Vendor>
+<Specification-Version>${project.version}</Specification-Version>
+</manifestEntries>
+</archive>
+</configuration>
+</plugin>
+<plugin>
+<groupId>org.apache.maven.plugins</groupId>
+<artifactId>maven-assembly-plugin</artifactId>
+<version>2.3</version>
+<configuration>
+<descriptors>
+<descriptor>src/main/assembly/bin.xml</descriptor>
+<descriptor>src/main/assembly/src.xml</descriptor>
+</descriptors>
+</configuration>
+<executions>
+<execution>
+<phase>package</phase>
+<goals>
+<goal>single</goal>
+</goals>
+</execution>
+</executions>
+</plugin>
+   <plugin>
 			<groupId>ch.fortysix</groupId>
 			<artifactId>maven-postman-plugin</artifactId>
 			<executions>
@@ -135,6 +185,13 @@
     <version>6.14.3</version>
     <scope>test</scope>
 </dependency>
+<!-- https://mvnrepository.com/artifact/org.apache.maven/maven-plugin-api -->
+<dependency>
+    <groupId>org.apache.maven</groupId>
+    <artifactId>maven-plugin-api</artifactId>
+    <version>3.5.3</version>
+</dependency>
+
 
 <!-- https://mvnrepository.com/artifact/com.sikulix/sikulixapi -->
 <dependency>
@@ -201,13 +258,38 @@
     <version>3.17</version>
 </dependency>  
 
-
 <!-- https://mvnrepository.com/artifact/javax.mail/javax.mail-api -->
 <dependency>
     <groupId>javax.mail</groupId>
     <artifactId>javax.mail-api</artifactId>
     <version>1.6.1</version>
+ </dependency>
+
+<!-- https://mvnrepository.com/artifact/org.apache.maven/maven-plugin-api -->
+
+<!-- https://mvnrepository.com/artifact/org.apache.maven/maven-plugin-api -->
+<dependency>
+    <groupId>org.apache.maven</groupId>
+    <artifactId>maven-plugin-api</artifactId>
+    <version>3.5.3</version>
 </dependency>
-   </dependencies> 
+
+
+<!-- https://mvnrepository.com/artifact/com.googlecode.javacpp/javacpp -->
+<dependency>
+    <groupId>com.googlecode.javacpp</groupId>
+    <artifactId>javacpp</artifactId>
+    <version>0.7</version>
+</dependency>
+  <!-- https://mvnrepository.com/artifact/com.googlecode.javacv/javacv -->
+
+<dependency>
+    <groupId>org.bytedeco</groupId>
+    <artifactId>javacv</artifactId>
+    <version>0.8</version>
+</dependency>
+
+
+ </dependencies> 
  </project>
 

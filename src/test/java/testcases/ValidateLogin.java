@@ -41,7 +41,7 @@ public void intialize() throws IOException
 	
 @Test(dataProvider="getData")	
 	
-public void basePageNavigation(String Username,String Password) throws IOException
+public void LoginValidation(String Username,String Password) throws IOException
  {
 	
 	

@@ -30,7 +30,7 @@ public class ValidateNavBar extends Base {
 	
 @Test
 	
-public void basePageNavigation() throws IOException
+public void NavigationBarValidation() throws IOException
   {
 	driver.get(prop.getProperty("url"));
 	

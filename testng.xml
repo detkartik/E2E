@@ -7,11 +7,6 @@
 <listener class-name="e2e.ExtentReporterNG"/>
 </listeners>  
 
-<test name="Homepage">
-   <classes>
-      <class name="e2e.Homepage"/>
-    </classes>
-  </test>
    
    <test name="Category Navigation">
       <classes>
@@ -19,31 +14,57 @@
       </classes>
    </test>
    
+   <test name="sub category nav">
+     <classes>
+     <class name="testcases.SubcategoryNav"/>
+      </classes>
+    </test>
+   
+   
    <test name="Validate Title"> 
    <classes>  
       <class name="testcases.ValidateTitle"/>
       </classes>
     </test>
-     <test name="sub category nav">
-     <classes>
-     <class name="testcases.SubcategoryNav"/>
-      </classes>
-      </test>
-   <test name = "Contet Test">
-   <classes>
-      <class name="e2e.HomeContentTest"/>
- </classes>
- </test>
- <test name="Validation Nav Bar">
+   
+   <test name="Validation Nav Bar">
      <classes> 
       <class name="testcases.ValidateNavBar"/>
       </classes>
   </test>
-  <test name = "UI Testcases">
-  <classes>
-  <class name="testcases.UITest"/>
+
+   <test name="Validate Login page">
+   <classes>
+      <class name="testcases.ValidateLogin"/>
+    </classes>
+   </test>
+
   
+  <test name = "Homepage UI Testcases">
+  <classes>
+  <class name="testcases.HomepageUITest"/>
   </classes>
   </test>
+ 
+ <test name = " Category page validation">
+  <classes>
+  <class name = "testcases.CategorypageValidation"/>
+  </classes>
+  </test>
+
+ <test name = " PDP navigation">
+  <classes>
+  <class name = "testcases.PDPNavigation"/>
+  </classes>
+   </test>
+
+ <test name = " PDP validation">
+  <classes>
+  <class name = "testcases.PDPValidation"/>
+  </classes>
+   </test>
+  
+ 
+ 
    <!-- Test -->
 </suite> <!-- Suite -->

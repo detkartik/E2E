@@ -4,6 +4,8 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 import java.io.IOException;
+import java.util.concurrent.TimeUnit;
+
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.sikuli.script.FindFailed;
@@ -12,10 +14,10 @@ import pageObjects.Patterns;
 import resource.Base;
 
 
-public class UITest extends Base {
+public class HomepageUITest extends Base {
 
 	
-	public static Logger log =LogManager.getLogger(UITest.class.getName());
+	public static Logger log =LogManager.getLogger(HomepageUITest.class.getName());
 	
 	
 @BeforeTest
@@ -24,7 +26,11 @@ public class UITest extends Base {
 
 	driver = InitializeDriver();
 	log.info("driver is initialized"); 
-		
+	driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
+	 driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+	 driver.manage().deleteAllCookies();
+	 driver.manage().window().maximize();
+	
 	 }	
 	
 @Test(priority = 2)
@@ -65,6 +71,7 @@ public void SiteTitle() throws FindFailed
 	   String fontsize = l.getTitle().getCssValue("font-size").trim();
 	   System.out.println("font size"+""+fontsize);
 	   }
+
 @Test (priority =3)
 public void HeaderBanner() throws FindFailed 
 {
@@ -74,8 +81,6 @@ public void HeaderBanner() throws FindFailed
 	p.pattern3();  
 	String bgcolor = l.HeaderBanner().getCssValue("background-color").trim();
 	 System.out.println(bgcolor);
-
-
 }
 
 @AfterTest

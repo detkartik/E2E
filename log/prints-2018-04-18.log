@@ -1,0 +1,4 @@
+13:00:08.702 [main] INFO  testcases.ValidateNavBar - validation is successfull
+13:00:13.493 [main] INFO  testcases.ValidateLogin - driver is initialized
+13:00:15.333 [main] INFO  testcases.ValidateLogin - Navigated to Homepage
+13:01:24.768 [main] INFO  testcases.HomepageUITest - driver is initialized

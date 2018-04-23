@@ -1,0 +1,6 @@
+22:49:46.528 [main] INFO  testcases.HomepageUITest - driver is initialized
+22:50:20.863 [main] INFO  testcases.CategorypageValidation - driver is initialized
+22:53:04.670 [main] INFO  testcases.CategorypageValidation - Category page is scrolling successfully
+22:53:11.432 [main] INFO  testcases.PDPNavigation - driver is initialized
+22:53:36.528 [main] INFO  testcases.PDPValidation - driver is initialized
+22:53:54.348 [main] INFO  testcases.PDPValidation - Successfully navigated to Category landing page
