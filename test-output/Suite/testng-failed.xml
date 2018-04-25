@@ -5,48 +5,59 @@
     <listener class-name="e2e.Listner"/>
     <listener class-name="e2e.ExtentReporterNG"/>
   </listeners>
-  <test thread-count="5" name="Homepage(failed)">
+  <test thread-count="5" name="Category Navigation(failed)">
     <classes>
-      <class name="e2e.Homepage">
+      <class name="testcases.CategoryNavigation">
         <methods>
-          <include name="intialize"/>
           <include name="teardown"/>
-          <include name="basePageNavigation"/>
+          <include name="intialize"/>
+          <include name="CategoryPageNavigation"/>
         </methods>
-      </class> <!-- e2e.Homepage -->
+      </class> <!-- testcases.CategoryNavigation -->
     </classes>
-  </test> <!-- Homepage(failed) -->
+  </test> <!-- Category Navigation(failed) -->
   <test thread-count="5" name="Validate Title(failed)">
     <classes>
       <class name="testcases.ValidateTitle">
         <methods>
           <include name="intialize"/>
           <include name="teardown"/>
-          <include name="basePageNavigation"/>
+          <include name="TitleValidation"/>
         </methods>
       </class> <!-- testcases.ValidateTitle -->
     </classes>
   </test> <!-- Validate Title(failed) -->
-  <test thread-count="5" name="sub category nav(failed)">
+  <test thread-count="5" name="Validate Login page(failed)">
     <classes>
-      <class name="testcases.SubcategoryNav">
+      <class name="testcases.ValidateLogin">
         <methods>
           <include name="intialize"/>
-          <include name="basePageNavigation"/>
+          <include name="LoginValidation" invocation-numbers="0"/>
           <include name="teardown"/>
         </methods>
-      </class> <!-- testcases.SubcategoryNav -->
+      </class> <!-- testcases.ValidateLogin -->
     </classes>
-  </test> <!-- sub category nav(failed) -->
-  <test thread-count="5" name="Contet Test(failed)">
+  </test> <!-- Validate Login page(failed) -->
+  <test thread-count="5" name="Homepage UI Testcases(failed)">
     <classes>
-      <class name="e2e.HomeContentTest">
+      <class name="testcases.HomepageUITest">
         <methods>
-          <include name="teardown"/>
-          <include name="basePageNavigation"/>
           <include name="intialize"/>
+          <include name="SiteTitle"/>
+          <include name="teardown"/>
         </methods>
-      </class> <!-- e2e.HomeContentTest -->
+      </class> <!-- testcases.HomepageUITest -->
     </classes>
-  </test> <!-- Contet Test(failed) -->
+  </test> <!-- Homepage UI Testcases(failed) -->
+  <test thread-count="5" name=" PDP validation(failed)">
+    <classes>
+      <class name="testcases.PDPValidation">
+        <methods>
+          <include name="ProductPageValidation"/>
+          <include name="intialize"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- testcases.PDPValidation -->
+    </classes>
+  </test> <!--  PDP validation(failed) -->
 </suite> <!-- Failed suite [Suite] -->

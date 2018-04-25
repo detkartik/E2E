@@ -2,24 +2,24 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="35587" started-at="2018-04-23T17:16:13Z" finished-at="2018-04-23T17:16:49Z">
+  <suite name="Default suite" duration-ms="140956" started-at="2018-04-25T13:43:26Z" finished-at="2018-04-25T13:45:47Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="35587" started-at="2018-04-23T17:16:13Z" finished-at="2018-04-23T17:16:49Z">
-      <class name="testcases.PDPValidation">
-        <test-method status="PASS" signature="intialize()[pri:0, instance:testcases.PDPValidation@6e6f2380]" name="intialize" is-config="true" duration-ms="4434" started-at="2018-04-23T17:16:13Z" finished-at="2018-04-23T17:16:18Z">
+    <test name="Default test" duration-ms="140956" started-at="2018-04-25T13:43:26Z" finished-at="2018-04-25T13:45:47Z">
+      <class name="testcases.CategorypageValidation">
+        <test-method status="PASS" signature="intialize()[pri:0, instance:testcases.CategorypageValidation@5d0bf09b]" name="intialize" is-config="true" duration-ms="4615" started-at="2018-04-25T13:43:26Z" finished-at="2018-04-25T13:43:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- intialize -->
-        <test-method status="PASS" signature="ProductPageValidation()[pri:0, instance:testcases.PDPValidation@6e6f2380]" name="ProductPageValidation" duration-ms="28880" started-at="2018-04-23T17:16:18Z" finished-at="2018-04-23T17:16:47Z">
+        <test-method status="PASS" signature="CategoryPageValidation()[pri:0, instance:testcases.CategorypageValidation@5d0bf09b]" name="CategoryPageValidation" duration-ms="134005" started-at="2018-04-25T13:43:31Z" finished-at="2018-04-25T13:45:45Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ProductPageValidation -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:testcases.PDPValidation@6e6f2380]" name="teardown" is-config="true" duration-ms="2254" started-at="2018-04-23T17:16:47Z" finished-at="2018-04-23T17:16:49Z">
+        </test-method> <!-- CategoryPageValidation -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:testcases.CategorypageValidation@5d0bf09b]" name="teardown" is-config="true" duration-ms="2313" started-at="2018-04-25T13:45:45Z" finished-at="2018-04-25T13:45:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- testcases.PDPValidation -->
+      </class> <!-- testcases.CategorypageValidation -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

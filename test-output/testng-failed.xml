@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testcases.PDPValidation">
+      <class name="testcases.CategoryNavigation">
         <methods>
-          <include name="ProductPageValidation"/>
-          <include name="intialize"/>
           <include name="teardown"/>
+          <include name="intialize"/>
+          <include name="CategoryPageNavigation"/>
         </methods>
-      </class> <!-- testcases.PDPValidation -->
+      </class> <!-- testcases.CategoryNavigation -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

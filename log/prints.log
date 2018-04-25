@@ -1,1 +1,4 @@
-22:54:01.170 [main] INFO  testcases.PDPValidation - Successfully navigated to PDP
+19:22:15.411 [main] INFO  testcases.PDPNavigation - Successfully navigated to PDP
+19:22:23.505 [main] INFO  testcases.PDPValidation - driver is initialized
+19:22:42.437 [main] INFO  testcases.PDPValidation - Successfully navigated to Category landing page
+19:22:49.963 [main] INFO  testcases.PDPValidation - Successfully navigated to PDP
